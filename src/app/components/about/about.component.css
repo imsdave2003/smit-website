@@ -1,0 +1,335 @@
+.about-section
+{
+    width: 100%;
+    height: auto;
+    /* background-color: aquamarine; */
+    padding: 0 8%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-section .about-left
+{
+    /* background-color: purple; */
+    width: 55%;
+}
+.about-left h1{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+}
+.about-left span{
+    color: #8750F7;
+}
+.about-left p{
+    /* margin-top: 1rem; */
+    color: white;
+    font-size: 19px;
+    line-height: 1.4;
+    text-align: justify;
+    /* font-weight: ; */
+    /* background-color: #8750F7; */
+}
+.about-left .about-code-line{
+    margin: 1.8rem 0 1.5rem;
+    color: #8750F7;
+    font-weight: 500;
+}
+.about-left .about-know{
+    margin: 0.5rem 1.4rem 0;
+    font-size: 18px;
+}
+.about-left .about-innovative
+{
+    /* background-color: #8750F7; */
+    text-align: center;
+    margin-top: 2rem;
+    color: #8750F7;
+    font-size: 19px;
+}
+.about-left .name{
+    color: #8750F7;
+    text-align: center;
+    font-size: 16px;
+}
+.about-section .about-right{
+    width: 42%;
+    /* background-color: antiquewhite; */
+
+}
+.about-right img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.education-section
+{
+    height: auto;
+    width: 100%;
+    margin: 7rem 0 4.5rem;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* marb */
+}
+.education-section .education-section-left{
+    width: 50%;
+    /* background-color: aliceblue; */
+}
+.education-section .education-section-left h1{
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    /* color: #8750F7; */
+}
+.education-section-left h2{
+    color: #8750F7;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 2.5rem;
+}
+.about-left .personality-title
+{
+    font-weight: 500;
+    /* font-size: px; */
+    margin: 2.5rem 0 1.5rem;
+    color:#8750F7;
+}
+.education-section-left h3{
+    color: #8750f7;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 1.4rem;
+}
+.about-left .personality-title span{
+    color: white;
+}
+.about-left  ul li{
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 0.7rem;
+}
+.education-section-right{
+    width: 51%;
+}
+.education-section-right img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/*  */
+
+.education-section-left ul li{
+    color: white;
+    list-style-type: circle;
+    font-size: 18px;
+    /* margin-top: 0.8rem; */
+}
+
+.certi-section
+{
+    display: flex;
+    padding: 0 8%;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* background-color: #2a1454; */
+    margin-bottom: 4rem;
+}
+.certi-section .certi-left{
+    width: 50%;
+    /* background-color: #8750F7; */
+    color: white;
+}
+.certi-left h1{
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    
+}
+.certi-left ol li{
+    font-size: 20px;
+    list-style-type: circle;
+    margin: 1.4rem 0;
+}
+
+.certi button
+{
+    /* margin: auto; */
+    background: linear-gradient(135deg, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+    background-size: 200%;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.certi-right{
+    width: 45%;
+}
+
+.certi button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350%;
+    height: 350%;
+    background: radial-gradient(circle, rgba(136, 80, 247, 0.4) 10%, transparent 70%);
+    transition: all 0.5s ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+/* Hover Ripple Effect */
+.certi button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+/* Glowing Border on Hover */
+.certi button:hover {
+    background-position: right center;
+    color: #8750F7;
+    border: 2px solid #8750F7;
+    box-shadow: 0px 0px 15px rgba(136, 80, 247, 0.7);
+}
+
+/* Button Click Effect */
+.certi button:active {
+    transform: scale(0.95);
+}
+
+.certi button:hover {
+    background: transparent;
+    color: #8750F7;
+    border: 1px solid #8750F7;
+    box-shadow: 0 4px 15px rgba(136, 80, 247, 0.4);
+}
+
+.certi-right img{
+    width: 65%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (max-width:500px) {
+    .about-section{
+        width: 100%;
+        display: flex;
+        gap: 5rem;
+        flex-direction: column;
+    }
+   .about-section .about-left{
+    width: 100%;
+   }
+   .about-left h1{
+    /* background-color: #8750F7; */
+    font-size: 28px;
+   }
+   .about-left p{
+    font-size: 16px;
+   }
+    .personality-title{
+    /* font-size: 28px; */
+    font-size: 20px;
+    text-align: center;
+   }
+   .about-left ul li{
+    font-size: 16px;
+   }
+   .about-code-line{
+    font-size: 20px;
+    text-align: center;
+   }
+.about-left .about-innovative{
+    font-size: 18px;
+    margin-bottom: 0.6rem;
+}
+.about-section .about-right{
+    width: 100%;
+    /* background-color: #8750F7; */
+}
+.about-section .about-right img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.education-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+}
+.education-section .education-section-left{
+    width: 85%;
+    /* background-color: #8750F7; */
+}
+.education-section .education-section-left h1{
+    font-size: 24px;
+}
+.education-section .education-section-left h2{
+    font-size: 20px;
+}
+.education-section .education-section-left ul li{
+    font-size: 16px;
+    margin-top: 1rem;
+}
+.education-section-right{
+    /* background-color: #2a1454; */
+    width: 85%;
+}
+.education-section-right img{
+    width: 100%;
+}
+.certi-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.certi-section .certi-left{
+    width: 85%;
+    margin: 0 auto;
+    /* background-color: #8750F7; */
+}
+.certi-left h1{
+    font-size: 24px;
+}
+.certi-left ol li{
+    font-size: 18px;
+    /* width: 80%; */
+    /* background-color: #8750F7; */
+    /* margin: 0 auto; */
+}
+.certi-left button{
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.certi-right{
+    width: 100%;
+}
+.certi-right img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+}

@@ -1,0 +1,172 @@
+.experience
+{
+    margin: 4rem 0;
+    padding: 0 8%;
+}
+.experience-main
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.experience-text
+{
+    width: 50%;
+}
+.experience-text h1
+{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+}
+.experience-text  span
+{
+    color: #8750F7;
+}
+.company
+{
+    background-size: 200%;
+    position: relative;
+    /* gap: 60px; */
+    background-image: -webkit-gradient(linear, left top, right top, from(#8750f7), color-stop(51%, #2a1454), to(#8750f7));
+    background-image: linear-gradient(to right, #8750f7 0%, #474db8 25%, #8750f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 3rem;
+}
+.intern
+{
+    font-style: italic;
+    color:#7D49E5;
+    font-weight: 700;
+    margin-top: 0.6rem;
+    font-size: 20px;
+}
+.time
+{
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 0.6rem;
+}
+.intern-content
+{
+    font-size: 18px;
+    margin: 1rem 0;
+    line-height: 1.5rem;
+    color: white;
+    text-align: justify;
+}
+.intern-content span
+{
+    color: #a559c9;
+}
+.certi button
+{
+    /* margin: auto; */
+    background: linear-gradient(135deg, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+    background-size: 200%;
+    padding: 12px 22px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.certi button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350%;
+    height: 350%;
+    background: radial-gradient(circle, rgba(136, 80, 247, 0.4) 10%, transparent 70%);
+    transition: all 0.5s ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+/* Hover Ripple Effect */
+.certi button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+/* Glowing Border on Hover */
+.certi button:hover {
+    background-position: right center;
+    color: #8750F7;
+    border: 2px solid #8750F7;
+    box-shadow: 0px 0px 15px rgba(136, 80, 247, 0.7);
+}
+
+/* Button Click Effect */
+.certi button:active {
+    transform: scale(0.95);
+}
+
+.certi button:hover {
+    background: transparent;
+    color: #8750F7;
+    border: 1px solid #8750F7;
+    box-shadow: 0 4px 15px rgba(136, 80, 247, 0.4);
+}
+
+.experience-image{
+    width: 35%;
+    /* background-color: #1C99FE; */
+}
+.experience-image img{
+    width: 80%;
+    height: auto;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+@media screen and (max-width:500px) {
+    .experience-main{
+        display: flex;
+        gap: 5rem;
+        /* order: -1; */
+        flex-direction: column;
+    }
+    .experience-text{
+        width: 100%;
+        /* background-color: #474db8; */
+    }
+    .experience-text h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    .company-text .company{
+        font-size: 20px;
+    }
+    .company-text .intern{
+        font-size: 20px;
+    }
+    .company-text .intern-content{
+        font-size: 16px;
+    }
+    .certi button{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .experience-image{
+        /* background-color: #7D49E5; */
+        width: 100%;
+    }
+    .experience-image img{
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

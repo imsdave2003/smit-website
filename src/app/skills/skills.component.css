@@ -1,0 +1,155 @@
+.skills-section {
+    width: 100%;
+    padding: 0 8%;
+    text-align: center;
+    /* height: 100vh; */
+    /* background-color: aliceblue; */
+    /* height: 50vh; */
+}
+
+.skills-heading {
+    color: white;
+    font-weight: 500;
+    font-size: 45px;
+    margin-top: 3rem;
+}
+
+.skills-heading span {
+    color: #8750F7;
+}
+
+/* Responsive Grid Layout */
+.skills-container {
+    width: 100%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    /* column-gap: 100px; */
+    row-gap: 30px;
+    justify-content: center;
+    /* max-width: 1050px; */
+    /* background-color: rebeccapurple; */
+    align-items: center;
+}
+
+/* Skill Card Styling */
+.skill-card {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #140C1C;
+    border: 1px solid rgba(123, 73, 225, 0.383);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.skill-card:hover {
+    box-shadow: 0 0 30px rgba(136, 80, 247, 0.5);
+    border: 1px solid #7b4ed5;
+    transform: scale(1.05);
+}
+
+/* Icon Styling */
+.skill-card i {
+    font-size: 40px;
+    color: white;
+}
+
+/* Skill Name Transition */
+.skill-card p {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skill-card:hover p {
+    opacity: 1;
+}
+
+/* Styled Button */
+.skills-section button {
+    background: linear-gradient(135deg, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+    background-size: 200%;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Neon Glow Effect */
+.skills-section button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350%;
+    height: 350%;
+    background: radial-gradient(circle, rgba(136, 80, 247, 0.4) 10%, transparent 70%);
+    transition: all 0.5s ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+/* Hover Ripple Effect */
+.skills-section button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+/* Glowing Border on Hover */
+.skills-section button:hover {
+    background-position: right center;
+    color: #8750F7;
+    border: 2px solid #8750F7;
+    box-shadow: 0px 0px 15px rgba(136, 80, 247, 0.7);
+}
+
+/* Button Click Effect */
+.skills-section button:active {
+    transform: scale(0.95);
+}
+
+.skills-section button:hover {
+    background: transparent;
+    color: #8750F7;
+    border: 1px solid #8750F7;
+    box-shadow: 0 4px 15px rgba(136, 80, 247, 0.4);
+}
+
+@media screen and (max-width:500px) {
+   
+    .skills-section h1{
+        /* background-color: #7b4ed5; */
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+    }
+    .skills-container{
+        /* background-color: black; */
+        width: 100%;
+        text-align: center;
+       
+    }
+    .skills-container .skill-card{
+        width: 120px;
+        height: 120px;
+        /* text-align: center; */
+        margin-left: auto;
+        margin-right: auto;
+        /* display: block; */
+    }
+}

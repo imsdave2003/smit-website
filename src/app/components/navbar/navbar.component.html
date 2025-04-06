@@ -1,0 +1,32 @@
+<div class="navbar-section">
+    <div class="nav-left">
+        <div class="logo">
+            <a href=""><img src="images/logo.png" alt="Logo"></a>
+        </div>
+    </div>
+
+    <div class="nav-toggle" (click)="toggleNavbar()">
+        <span>&#9776;</span> <!-- Hamburger icon -->
+    </div>
+
+    <div class="nav-center" [ngClass]="{'open': isNavbarOpen}">
+        <nav>   
+            <ul>
+                <li><a routerLink="home" (click)="closeNavbar()">Home</a></li>
+                <li><a routerLink="about" (click)="closeNavbar()">About</a></li>
+                <li><a routerLink="skills" (click)="closeNavbar()">Skills</a></li>
+                <li><a routerLink="projects" (click)="closeNavbar()">Projects</a></li>
+                <li><a routerLink="experiences" (click)="closeNavbar()">Experiences</a></li>
+            </ul>
+            <!-- "Let's Connect" button visible inside the toggled menu -->
+            <div class="nav-button-responsive" *ngIf="isNavbarOpen">
+                <button><a routerLink="contact" (click)="closeNavbar()">Let's Connect</a></button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hide this button on smaller screens -->
+    <div class="nav-right">
+        <button><a routerLink="contact" (click)="closeNavbar()">Let's Connect</a></button>
+    </div>
+</div>

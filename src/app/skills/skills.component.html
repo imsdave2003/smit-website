@@ -1,0 +1,16 @@
+<div class="skills-section">
+    <h1 class="skills-heading">Professional <span>Skillset</span></h1>
+    
+    <div class="skills-container">
+        <div *ngFor="let skill of skills.slice(0, visibleSkills)" class="skill-card">
+            <i [class]="skill.icon"></i>
+            <p>{{ skill.name }}</p>
+        </div>
+    </div>
+
+    <button (click)="toggleView()">
+        {{ isExpanded ? 'View Less' : 'View More' }}
+    </button>
+</div>
+
+<!-- <app-footer></app-footer> -->

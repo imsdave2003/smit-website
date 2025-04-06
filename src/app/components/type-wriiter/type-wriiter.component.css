@@ -1,0 +1,27 @@
+.typewriter {
+    font-size: 36px;
+    font-weight: 500;
+    color: #8750F7;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .cursor {
+    color: #fff;
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .typewriter{
+      font-size: 28px;
+    }
+  }
+  
